@@ -85,13 +85,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
     
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));    
+    background: #EEE;
 }
 
 /*
@@ -218,7 +212,7 @@ a:focus {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
-    color: rgb(102, 102, 102);
+    color: rgb(35, 35, 35);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
@@ -661,43 +655,79 @@ a:focus {
     transition:         opacity 1s 5s,         transform 0.5s 4.5s;
 }
 
-/*
-    And as the last thing there is a workaround for quite strange bug.
-    It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
-    
-    Sometimes the element positioned in 3D (especially when it's moved back
-    along Z axis) is not clickable, because it falls 'behind' the <body>
-    element.
-    
-    To prevent this, I decided to make <body> non clickable by setting 
-    pointer-events property to `none` value.
-    Value if this property is inherited, so to make everything else clickable
-    I bring it back on the #impress element.
-    
-    If you want to know more about `pointer-events` here are some docs:
-    https://developer.mozilla.org/en/CSS/pointer-events
-    
-    There is one very important thing to notice about this workaround - it makes
-    everything 'unclickable' except what's in #impress element.
-    
-    So use it wisely ... or don't use at all.
-*/
-.impress-enabled          { pointer-events: none }
-.impress-enabled #impress { pointer-events: auto }
+/* custom styles */
 
-/*
-    There is one funny thing I just realized.
-    
-    Thanks to this workaround above everything except #impress element is invisible
-    for click events. That means that the hint element is also not clickable.
-    So basically all of this transforms and delayed transitions trickery was probably
-    not needed at all...
-    
-    But it was fun to learn about it, wasn't it?
-*/
+#main-title h1 {
+  font-size: 200%;
+  font-weight: bold;
+  margin-bottom: 20%;
+  padding-top: 15%;
+}
 
-/*
-    That's all I have for you in this file.
-    Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
-    for you.
-*/
+#case-depart {
+  color: white;
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: bold;
+  background-image: url("../confused.jpg");
+}
+
+#case-depart p {
+  text-shadow: 0px 0px 5px black;
+}
+
+body {
+  background: #DDEEFF;
+}
+
+#share {
+  background: url("../newebe_screenshot.jpg") no-repeat ; 
+  -o-background-size: 100% 100%, auto;
+  -moz-background-size: 100% 100%, auto;
+  -webkit-background-size: 100% 100%, auto;
+  background-size: 100% 100%, auto;
+}
+
+#share p {
+  margin-top: 40px;
+  margin-left: -20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+pre {
+  font-size: 20px;
+  margin-top: 60px;
+  font-family: courier;
+  margin-left: -
+}
+
+#newebe {
+  background: white url("../newebe_logo_birds.jpg") no-repeat center center; 
+}
+
+.techno-images {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.techno-images img {
+    padding: 60px;
+}
+
+#big {
+    font-family: sans-serif
+}
+
+#big-end {
+    font-family: sans-serif
+}
+
+#big-end .license {
+    font-size: 26px;
+}
+
+#big-end p.credits {
+    font-size: 26px;
+    margin-top: 120px;
+}
