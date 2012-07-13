@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Newebe un réseau social distribué</title>
+    <title>Newebe un réseau social où chaque utilisateur héberge son compte</title>
     
     <meta name="description" content="Slides de la présentation Newebe" />
     <meta name="author" content="Frank Rousseau" />
@@ -36,14 +36,20 @@
             <p>Il y avait le web...</p>
             <p>ses sites de publication</p>
             <p>et le peer-to-peer</p>
+            <p class="center">
+              <img src="distribue.jpg" alt="Schéma distribué" />
+            </p>
         </q>
     </div>
 
     <div class="step slide" data-x="1200" data-y="-1200" data-rotate="45">
         <q>
             <p>Et puis nous avons bifurqués</p>
-            <p>attirés par le "cloud", la centralisation</p>
+            <p>vers le "cloud", la centralisation des données</p>
             <p>notamment pour les réseaux sociaux</p>
+            <p class="center">
+              <img src="centralisation.jpg" alt="Schéma centralisation" />
+            </p>
         </q>
     </div>
 
@@ -52,23 +58,30 @@
             <p>Les réseaux fédératifs sont arrivés</p>
             <p>et nous ont permis de repartir vers</p>
             <p>le chemin initial...</p>
+            <p class="center">
+              <img src="federatif.jpg" alt="Schéma fédératif" />
+            </p>
         </q>
     </div>
     <div class="step" data-x="3000" data-y="-1500" data-scale="3">
         &nbsp;
     </div>
     <div class="step slide" data-x="4000" data-y="-1500">
-            <p>Que nous avons retrouvé avec les réseaux sociaux distribués</p>
-            <p>Ici chacun possède son noeud et chaque noeud se parlent
-            directement.</p>
-            <p>Comme avec du peer-to-peer</p>
+        <q>
+            <p>Avec les réseaux sociaux distribués</p>
+            <p>Ici chacun possède son noeud et se parlent
+            directement comme en peer-to-peer.</p>
+            <p class="center">
+              <img src="distribue.jpg" alt="Schéma distribué" />
+            </p>
+        </q>
     </div>    
     <div id="case-depart" class="step slide" data-x="5000" data-y="-1500">
         <p>Retour à la <br /> case départ ?</p>
     </div>
     <div class="step slide" data-x="6000" data-y="-1500">
         <q>
-        <p>Non car on garde les avantages du cloud</p>
+        <p style="font-weight: bold; text-align: center;">Non, <br /> on garde les avantages du cloud</p>
         </q>
     </div>
     <div id="share" 
@@ -76,8 +89,8 @@
         <p>On partage ses posts et ses images</p>
     </div>
     <div class="step slide" data-x="8700" data-y="-1500" data-scale="1.6">
-        <p>avec une interface accessible de partout 
-        et un serveur avec lequel on intéropere facilement</p>
+        <p>avec une interface accessible de partout et 
+           des données avec lesquelles on intéropere facilement !</p>
         <pre>
 GET http://newebe.mydomain.net/microposts/all/ 
 =>
@@ -96,32 +109,20 @@ GET http://newebe.mydomain.net/microposts/all/
     </div>
     <div id="newebe" class="step slide" data-x="10500" data-y="-1500" data-scale="2">
         <p>C'est d'ailleurs grâce à cette interopérabilité que
-        deux newebes s'envoie des messages l'un à l'autre sans passer par 
+        deux newebes s'envoient des messages l'un à l'autre sans passer par 
         un tiers.</p>
     </div>
-    <div id="technos" class="step slide" data-x="12500" data-y="-1500" 
-         data-scale="2">
-        <p>Et sous le capot ?</p>
-        <p class="techno-images">
-            <img src="couchdbpowered.png" alt="Powered by Coucdb" />
-            <img src="tornadopowered.png" alt="Powered by Tornado" />
-            <img src="backbonepowered.png" alt="Powered by Backbone" />
-        </p>
-    </div>
 
 
-    <div id="big" class="step" data-x="6000" data-y="2100" data-scale="6">
-        <p>des<b>?</b> <span class="thoughts">questions</span></p>
-    </div>
-    <div id="big-end" class="step" data-x="6000" data-y="7500" data-scale="6">
+    <div id="big-end" class="step" data-x="6000" data-y="4000" data-scale="6">
         <img src="newebe_logo_birds.jpg" alt="Newebe logo" />
         <p>newebe.org</p>
-        <p>github.com/gelnior/newebe</p>
         <p class="license">
         licence AGPL
         </p>
         <p class="credits">
-        Problèmes posés par le cloud : E. Moglen, B. Bayard...<br />
+        <span><em>credits</em></span><br />
+        Problèmes posés par le cloud : E. Moglen, B. Bayart...<br />
         Photo slide retour case départ : JoeBenjamin sur Flickr<br />
         Logo newebe : Stella Salumaa
         </p>
